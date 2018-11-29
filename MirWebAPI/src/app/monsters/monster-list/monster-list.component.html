@@ -1,0 +1,58 @@
+﻿<div class="content">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Level</th>
+                <th>Alive</th>
+                <th>Tame</th>
+                <th>Experience</th>
+                <th>Attack</th>
+                <th>Defence</th>
+                <th>Fire</th>
+                <th>Cold</th>
+                <th>Light</th>
+                <th>Wind</th>
+                <th>Holy</th>
+                <th>Dark</th>
+                <th>Phantom</th>
+                <th>BC</th>
+                <th>MapId</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let monster of monsters">
+            <tr>
+                <td rowspan="3">
+                    <img src="{{monster.imageUrl}}" />
+                    <br />
+                    {{monster.nameKR}} ({{monster.name}})
+                </td>
+                <td>{{monster.id}}</td>
+                <td>{{monster.level}}</td>
+                <td>{{monster.alive}}</td>
+                <td>{{monster.tame}}</td>
+                <td>{{monster.experience}}</td>
+                <td>{{monster.attack}}</td>
+                <td>{{monster.defence}}</td>
+                <td>{{monster.fire}}</td>
+                <td>{{monster.cold}}</td>
+                <td>{{monster.light}}</td>
+                <td>{{monster.wind}}</td>
+                <td>{{monster.holy}}</td>
+                <td>{{monster.dark}}</td>
+                <td>{{monster.phantom}}</td>
+                <td>{{monster.BC}}</td>
+                <td>
+                    <a [routerLink]="['/maps/', monster.mapId]">{{monster.mapId}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="16">{{monster.items}}</td>
+            </tr>
+            <tr>
+                <td colspan="16">{{monster.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

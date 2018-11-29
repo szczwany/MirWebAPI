@@ -1,0 +1,18 @@
+.my-header {
+    height: 180px;
+    width: 100%;
+}
+
+.my-sep {
+    height: 50px;
+    width: 100%;
+}
+
+.my-left {
+    width: 25%;
+    height: 600px;
+}
+
+.my-main {
+    width: 70%;
+}

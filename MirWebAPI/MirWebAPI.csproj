@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <PostBuildEvent>ng build --aot</PostBuildEvent>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\SeedData\AllFloors.txt" />
+    <None Remove="Data\SeedData\AllMaps.txt" />
+    <None Remove="Data\SeedData\AllMonsters.txt" />
+    <None Remove="Data\SeedData\AllNpcs.txt" />
+    <None Remove="Models\.editorconfig" />
+    <None Remove="src\app\_models\floor.ts" />
+    <None Remove="src\app\_models\mapType.ts" />
+    <None Remove="src\app\_models\npc.ts" />
+    <None Remove="src\app\_models\role.ts" />
+    <None Remove="src\app\_models\skill.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\SeedData\AllFloors.txt" />
+    <Content Include="Data\SeedData\AllMaps.txt" />
+    <Content Include="Data\SeedData\AllMonsters.txt" />
+    <Content Include="Data\SeedData\AllNpcs.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\app\_guards\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\_models\skill.ts" />
+    <TypeScriptCompile Include="src\app\_models\npc.ts" />
+    <TypeScriptCompile Include="src\app\_models\mapType.ts" />
+    <TypeScriptCompile Include="src\app\_models\floor.ts" />
+    <TypeScriptCompile Include="src\app\_models\role.ts" />
+  </ItemGroup>
+
+</Project>

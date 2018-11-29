@@ -1,0 +1,27 @@
+﻿<div class="content">
+    <table class="table table-bordered" style="width: 1000px">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>NameKR</th>
+                <th>Last Update</th>
+                <th>First Floor</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let map of maps">
+            <tr style="height: 50px">
+                <td>{{map.id}}</td>
+                <td>{{map.name}}</td>
+                <td><a [routerLink]="['/maps/', map.id]">{{map.nameKR}}</a></td>
+                <td>{{map.lastUpdate}}</td>
+                <td rowspan="2">
+                    <img src="{{map.floors[0]?.imageUrl}}" style="width: 300px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">{{map.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

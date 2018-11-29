@@ -1,0 +1,28 @@
+﻿<div class="content lg-2">
+    <table class="table table-bordered" style="width: 1000px">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>NameKR</th>
+                <th>Description</th>
+                <th>MapId</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let floor of floors">
+            <tr>
+                <td>{{floor.id}}</td>
+                <td>{{floor.name}}</td>
+                <td>{{floor.nameKR}}</td>
+                <td>{{floor.description}}</td>
+                <td>
+                    <a [routerLink]="['/maps/', floor.mapId]">{{floor.mapId}}</a>
+                </td>
+                <td>
+                    <img src="{{floor.imageUrl}}" style="max-width: 300px" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

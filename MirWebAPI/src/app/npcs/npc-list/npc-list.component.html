@@ -1,0 +1,36 @@
+﻿<div class="content lg-2">
+    <table class="table table-bordered" style="width: 1000px">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Quest</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Explanation</th>
+                <th>MapId</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let npc of npcs">
+            <tr>
+                <td>
+                    <img src="{{npc.imageUrl}}" />
+                </td>
+                <td>{{npc.id}}</td>
+                <td style="text-align: center; color: orangered; width: 100px">
+                    {{npc.title}}
+                    <br />
+                    {{npc.nameKR}} <!-- {{npc.name}} -->
+                </td>
+                <td>{{npc.quest}}</td>
+                <td>{{npc.description}}</td>
+                <td>{{npc.location}}</td>
+                <td>{{npc.explanation}}</td>
+                <td>
+                    <a [routerLink]="['/maps/', npc.mapId]">{{npc.mapId}}</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

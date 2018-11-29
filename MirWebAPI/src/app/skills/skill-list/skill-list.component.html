@@ -1,0 +1,37 @@
+﻿<div class="content">
+    <table class="table table-bordered" style="width: 1200px">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Role</th>
+                <th>Type</th>
+                <th>Name</th>
+                <th>NameKR</th>
+                <th>Icon</th>
+                <th>Consumption</th>
+                <th>Training</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let skill of skills">
+            <tr style="height: 50px">
+                <td>{{skill.id}}</td>
+                <td>{{skill.role.name}}</td>
+                <td>{{skill.type}}</td>
+                <td>{{skill.name}}</td>
+                <td>{{skill.nameKR}}</td>
+                <td>
+                    <img src="{{skill.iconUrl}}" style="width: 40px; height:40px" />
+                </td>
+                <td>{{skill.consumption}}</td>
+                <td>{{skill.training}}</td>
+                <td rowspan="2">
+                    <img src="{{skill.skillUrl}}" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8">{{skill.explanation}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

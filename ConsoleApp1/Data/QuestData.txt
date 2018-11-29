@@ -1,0 +1,10 @@
+﻿Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=0&s=0&t=&p=undefined&f=undefined
+Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=3cecc530&s=0&t=&p=3cfada52&f=undefined
+Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=3cecc530&s=0&t=&p=3d01e4e3&f=undefined
+Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=3d0ffa053d08ef74&s=0&t=&p=undefined&f=undefined
+Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=3d1704963d08ef74&s=0&t=&p=undefined&f=undefined
+Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=3d1e0f273d08ef74&s=0&t=&p=undefined&f=undefined
+Normal,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d08ef743cfada52&d4=3cecc5303d0ffa05&s=0&t=&p=undefined&f=undefined
+Special,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d0ffa053cfada52&d4=0&s=0&t=&p=undefined&f=undefined
+Repeatable,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d1704963cfada52&d4=0&s=0&t=&p=undefined&f=undefined
+Daily,a=L&d1=3d01e4e33cecc5303cf3cfc1&d2=3d0ffa053cf3cfc1&d3=3d1e0f273cfada52&d4=3cecc530&s=0&t=&p=3cf3cfc1&f=undefined

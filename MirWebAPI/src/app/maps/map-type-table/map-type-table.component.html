@@ -1,0 +1,22 @@
+﻿<div class="content lg-2">
+    <table class="table table-bordered" style="width: 1100px">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Level Range</th>
+                <th>Maps</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let type of types">
+            <tr>
+                <td style="width: 150px">{{type.description}}</td>
+                <td style="width: 50px">{{type.levelRange}}</td>
+                <td>
+                    <span *ngFor="let map of type.maps" style="margin-right: 8px">
+                        <a [routerLink]="['/maps/', map.id]">{{map.nameKR}}</a>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

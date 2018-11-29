@@ -1,0 +1,10 @@
+﻿<div class="container mt-4">
+    <div *ngFor="let role of roles">
+        <span class="border">
+            {{role.id}}
+        </span>
+        <span class="border m-1">
+            <a [routerLink]="['/roles/', role.id]">{{role.name}}</a>
+        </span>
+    </div>
+</div>  
